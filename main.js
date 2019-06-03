@@ -17,13 +17,11 @@ searchItem = function(word){
   console.log(octopartTargetUrl);
   chrome.tabs.create({url: octopartTargetUrl});
 
-
   // https://github.com/search?q=stm32f103
-
-  var octopartTargetUrl = "https://github.com/search?q=" + query;
+  var searchParam = '?o=desc&s=stars&type=Repositories'
+  var octopartTargetUrl = "https://github.com/search?q=" + query + searchParam;
   console.log(octopartTargetUrl);
   chrome.tabs.create({url: octopartTargetUrl});
-
 
   var octopartTargetUrl = "https://octopart.com/search?q=" + query;
   console.log(octopartTargetUrl);
