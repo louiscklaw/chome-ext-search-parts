@@ -1,8 +1,15 @@
 searchItem = function(word){
   var query = word.selectionText;
 
-  // search in tindie
 
+  // https://www.youtube.com/results?search_query=stm32f103
+  var searchParam = '&sp=CAISAhAB'
+  var octopartTargetUrl = "https://www.youtube.com/results?search_query=" + query + searchParam;
+  console.log(octopartTargetUrl);
+  chrome.tabs.create({url: octopartTargetUrl});
+
+
+  // search in tindie
   var octopartTargetUrl = "https://www.tindie.com/search/?q=" + query;
   console.log(octopartTargetUrl);
   chrome.tabs.create({url: octopartTargetUrl});
@@ -22,6 +29,17 @@ searchItem = function(word){
   var octopartTargetUrl = "https://github.com/search?q=" + query + searchParam;
   console.log(octopartTargetUrl);
   chrome.tabs.create({url: octopartTargetUrl});
+
+  // https://www.adafruit.com/?q=MCP4725
+  var octopartTargetUrl = "https://www.adafruit.com?q=" + query;
+  console.log(octopartTargetUrl);
+  chrome.tabs.create({url: octopartTargetUrl});
+
+  // https://www.sparkfun.com/search/results?term=MCP4725
+  var octopartTargetUrl = "https://www.sparkfun.com/search/results?term=" + query;
+  console.log(octopartTargetUrl);
+  chrome.tabs.create({url: octopartTargetUrl});
+
 
   var octopartTargetUrl = "https://octopart.com/search?q=" + query;
   console.log(octopartTargetUrl);
