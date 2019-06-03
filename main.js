@@ -8,6 +8,15 @@ searchItem = function(word){
   console.log(octopartTargetUrl);
   chrome.tabs.create({url: octopartTargetUrl});
 
+  // https://www.adafruit.com/?q=MCP4725
+  var octopartTargetUrl = "https://www.adafruit.com?q=" + query;
+  console.log(octopartTargetUrl);
+  chrome.tabs.create({url: octopartTargetUrl});
+
+  // https://www.sparkfun.com/search/results?term=MCP4725
+  var octopartTargetUrl = "https://www.sparkfun.com/search/results?term=" + query;
+  console.log(octopartTargetUrl);
+  chrome.tabs.create({url: octopartTargetUrl});
 
   // search in tindie
   var octopartTargetUrl = "https://www.tindie.com/search/?q=" + query;
@@ -25,18 +34,8 @@ searchItem = function(word){
   chrome.tabs.create({url: octopartTargetUrl});
 
   // https://github.com/search?q=stm32f103
-  var searchParam = '?o=desc&s=stars&type=Repositories'
+  var searchParam = '&o=desc&s=stars&type=Repositories'
   var octopartTargetUrl = "https://github.com/search?q=" + query + searchParam;
-  console.log(octopartTargetUrl);
-  chrome.tabs.create({url: octopartTargetUrl});
-
-  // https://www.adafruit.com/?q=MCP4725
-  var octopartTargetUrl = "https://www.adafruit.com?q=" + query;
-  console.log(octopartTargetUrl);
-  chrome.tabs.create({url: octopartTargetUrl});
-
-  // https://www.sparkfun.com/search/results?term=MCP4725
-  var octopartTargetUrl = "https://www.sparkfun.com/search/results?term=" + query;
   console.log(octopartTargetUrl);
   chrome.tabs.create({url: octopartTargetUrl});
 
