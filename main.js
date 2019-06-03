@@ -1,7 +1,6 @@
 searchItem = function(word){
   var query = word.selectionText;
 
-
   // https://www.youtube.com/results?search_query=stm32f103
   var searchParam = '&sp=CAISAhAB'
   var octopartTargetUrl = "https://www.youtube.com/results?search_query=" + query + searchParam;
@@ -39,6 +38,15 @@ searchItem = function(word){
   console.log(octopartTargetUrl);
   chrome.tabs.create({url: octopartTargetUrl});
 
+  // https://www.google.com.hk/search?q=esp-12+application+note
+  var octopartTargetUrl = "https://www.google.com.hk/search?q=" + query+'+application+note';
+  console.log(octopartTargetUrl);
+  chrome.tabs.create({url: octopartTargetUrl});
+
+  // https://www.google.com.hk/search?q=esp-12+application+note
+  var octopartTargetUrl = "https://www.google.com.hk/search?q=" + query+'+breakout';
+  console.log(octopartTargetUrl);
+  chrome.tabs.create({url: octopartTargetUrl});
 
   var octopartTargetUrl = "https://octopart.com/search?q=" + query;
   console.log(octopartTargetUrl);
