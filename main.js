@@ -22,6 +22,11 @@ searchItem = function(word){
   console.log(octopartTargetUrl);
   chrome.tabs.create({url: octopartTargetUrl});
 
+  // https://shop.pimoroni.com/
+  var octopartTargetUrl = "https://shop.pimoroni.com/?q=" + query;
+  console.log(octopartTargetUrl);
+  chrome.tabs.create({url: octopartTargetUrl});
+
   // https://www.electroschematics.com/?s=stm32f103
   var octopartTargetUrl = "https://www.electroschematics.com/?s=" + query;
   console.log(octopartTargetUrl);
@@ -40,6 +45,11 @@ searchItem = function(word){
 
   // https://www.google.com.hk/search?q=esp-12+application+note
   var octopartTargetUrl = "https://www.google.com.hk/search?q=" + query+'+application+note';
+  console.log(octopartTargetUrl);
+  chrome.tabs.create({url: octopartTargetUrl});
+
+  // https://www.digikey.com/en/maker/search-results?k=stm32
+  var octopartTargetUrl = "https://www.digikey.com/en/maker/search-results?k=" + query+'+application+note';
   console.log(octopartTargetUrl);
   chrome.tabs.create({url: octopartTargetUrl});
 
