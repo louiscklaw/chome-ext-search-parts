@@ -49,7 +49,7 @@ searchItem = function(word){
   chrome.tabs.create({url: octopartTargetUrl});
 
   // https://www.digikey.com/en/maker/search-results?k=stm32
-  var octopartTargetUrl = "https://www.digikey.com/en/maker/search-results?k=" + query+'+application+note';
+  var octopartTargetUrl = "https://www.digikey.com/en/maker/search-results?k=" + query;
   console.log(octopartTargetUrl);
   chrome.tabs.create({url: octopartTargetUrl});
 
