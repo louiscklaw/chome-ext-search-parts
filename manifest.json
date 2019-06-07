@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "parts Search",
-  "short_name": "Search",
-  "description": "Searches for the selected text in the parts",
+  "name": "Search_parts_info",
+  "short_name": "Search parts info",
+  "description": "searcn parts information using selected text",
   "version": "0.0.1",
   "minimum_chrome_version": "38",
   "permissions": [
