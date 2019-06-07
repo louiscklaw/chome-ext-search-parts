@@ -53,6 +53,10 @@ searchItem = function(word){
   console.log(octopartTargetUrl);
   chrome.tabs.create({url: octopartTargetUrl});
 
+  var octopartTargetUrl = "https://www.google.com.hk/search?q=" + query+'+schematic';
+  console.log(octopartTargetUrl);
+  chrome.tabs.create({url: octopartTargetUrl});
+
   // https://www.google.com.hk/search?q=esp-12+application+note
   var octopartTargetUrl = "https://www.google.com.hk/search?q=" + query+'+breakout';
   console.log(octopartTargetUrl);
